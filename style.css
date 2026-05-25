@@ -1,0 +1,37 @@
+/* Full-screen hero background */
+.hero {
+  background: url('images/money-bg.jpg') center/cover no-repeat;
+  height: 50vh;
+  position: relative;
+}
+
+.hero::before { /* dark overlay for readability */
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+}
+
+.card h3 {
+  font-weight: bold;
+}
+
+table td, table th {
+  vertical-align: middle;
+}
+
+/* Footer styling */
+footer {
+  background: #212529;
+}
